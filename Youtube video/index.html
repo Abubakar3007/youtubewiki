@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <nav>
+        <div class="navbar">
+            <div class="endhidenavbar hide">
+                <div class="endhide">
+                    <div class="logo2">
+                        <div class="logoIcon">
+                            <a href="index.html"><img src="/images/h4.png" alt=""></a>
+                        </div>
+                        <div class="logoCross">
+                            <i class="fa fa-solid fa-xmark"></i>
+                        </div>
+                       
+                    </div>
+                    <ul>
+                        <li><a href="">Youtube to Link MP3</a></li>
+                        <li><a href="">YouTube to Link Video</a></li>
+                        <li><a href="/choose.html">Choose a Downloder</a></li>
+                    </ul>
+                </div>
+              
+            </div>
+            <div class="containerList">
+                <div class="humberger">
+                    <i class="fa fa-solid fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html"><img src="/images/h4.png" alt=""></a>
+                </div>
+                <div class="center">
+
+                </div>
+                <div class="end">
+                    <ul>
+                        <li><a href="">Youtube to Link MP3</a></li>
+                        <li><a href="">YouTube to Link Video</a></li>
+                        <li><a href="/choose.html">Choose a Downloder</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+    <header>
+        <div class="headerContainer">
+            <nav>
+                <div class="navbar">
+                    <div class="endhidenavbar hide">
+                        <div class="endhide">
+                            <div class="logo2">
+                                <div class="logoIcon">
+                                    <a href="index.html"><img src="/images/h4.png" alt=""></a>
+                                </div>
+                                <div class="logoCross">
+                                    <i class="fa fa-solid fa-xmark"></i>
+                                </div>
+
+                            </div>
+                            <ul>
+                                <li><a href="">Youtube to Link MP3</a></li>
+                                <li><a href="">YouTube to Link Video</a></li>
+                                <li><a href="/choose.html">Choose a Downloder</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="containerList">
+                        <div class="humberger">
+                            <i class="fa fa-solid fa-bars"></i>
+                        </div>
+                        <div class="logo">
+                            <a href="index.html"><img src="/images/h4.png" alt=""></a>
+                        </div>
+                        <div class="center">
+
+                        </div>
+                        <div class="end">
+                            <ul>
+                                <li><a href="">Youtube to Link MP3</a></li>
+                                <li><a href="">YouTube to Link Video</a></li>
+                                <li><a href="/choose.html">Choose a Downloder</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="headerContent">
+                    <h1>Downloader.wiki helps you to download <br> Video or Music from Websites</h1>
+
+                    <p>Convert Youtube videos to MP3 and MP4 files for free with our Youtube Video Converter</p>
+                    <form action="" class="formContainer">
+                        <input type="text" placeholder="Search or paste YouTube link here">
+                        <button id="btn">
+                            <span>Search</span>
+                        </button>
+                    </form>
+                    <p id="titleTerm">By using our service you accept our
+                        <a href="" target="_blank">
+                            Terms of Service
+                        </a>
+                    </p>
+
+
+                    <div id="errorContainer">
+                        <div class="errorInner">
+                            <span>Invalid Youtube video url.
+                                Please try again.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showVideoInner">
+                    <div class="showvideoInnerLeft">
+                        <img src="/images/videoShow.avif" alt="">
+                        <p>Motu Patlu | मोटू पतलू S1 | Salim Robot |
+                            Episode 21 Part 2 | Download Voot Kids App</p>
+                    </div>
+                    <div class="showvideoInnerright">
+                        <div class="TabLink">
+                            <ul>
+                                <li class="active" id="video">Video</li>
+                                <li id="audioclick">Audio</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane-in show" id="mp4">
+                                <table class="table table-hover table-dark">
+                                    <thead>
+                                        <tr class="border">
+                                            <th>File type</th>
+                                            <th>File size</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> MP4 auto quality </td>
+                                            <td>(MB)</td>
+                                            <td class="txt-center">
+                                                <button type="button" class="btn btn-primary btn-orange"
+                                                    onclick="startConvert('mp4','0+K4UBnVJu+iSYnVD5ZizhVgPRF1HQ3D5l7v2cUErI+d3DODR+3g9WmSMT2ehLA=')">
+                                                    Convert </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> MP4 - 720p </td>
+                                            <td> (MB)</td>
+                                            <td class="txt-center">
+                                                <button type="button" class="btn btn-primary btn-orange"
+                                                    onclick="startConvert('mp4','0+K4UBnVJu+iSYnVD5ZizhVgPRF1HQ3D5l7v2cVS68uOkjOCWvLo/HeEOyGDgw==')">
+                                                    Convert </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> MP4 - 360p </td>
+                                            <td> (39.8 MB)</td>
+                                            <td class="txt-center">
+                                                <button type="button" class="btn btn-primary btn-orange"
+                                                    onclick="startConvert('mp4','0+K4UBnVJu+iSYnVD5ZizhVgPRF1HQ3D5l7v2cVW78uOkjOCWvLo/HeEOyGDgw==')">
+                                                    Convert </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane-fade hide" id="audio">
+                                <table class="table table-hover table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th>File type</th>
+                                            <th>File size</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> M4A - 128kbps </td>
+                                            <td> (10.7 MB)</td>
+                                            <td class="txt-center">
+                                                <button type="button" class="btn btn-primary btn-orange"
+                                                    onclick="startConvert('m4a','0+K4UBnVJu+iSYnVD5ZizhVgPRF1HQ3D5l6rjMVU68OOkjOCWvLo/HeEOyGDgw==')">
+                                                    Convert </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> MP3 - 128kbps </td>
+                                            <td> (10.7 MB)</td>
+                                            <td class="txt-center">
+                                                <button type="button" class="btn btn-primary btn-orange"
+                                                    onclick="startConvert('mp3','0+K4UBnVJu+iSYnVD5ZizhVgPRF1HQ3D5l7v3sVU68OOkjOCWvLo/HeEOyGDgw==')">
+                                                    Convert </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="relatedvideo">
+                            <div class="relatedvideoTop">
+            
+                            </div>
+                            <div class="relatedVideoContent">
+                                <div class="relatedVideoCards">
+                                    <div class="realtedVideoCard">
+                                        <img src="/images/wwww.webp" alt="">
+                                        <div class="realtedPara">
+                                            Motu Patlu | मोटू पतलू S1 | Trekking | Episode 21 Part 1 | Download Voot
+                                        </div>
+                                    </div>
+                                    <div class="realtedVideoCard">
+                                        <img src="/images/wwww.webp" alt="">
+                                        <div class="realtedPara">
+                                            Motu Patlu | मोटू पतलू S1 | Trekking | Episode 21 Part 1 | Download Voot
+                                        </div>
+                                    </div>
+                                    <div class="realtedVideoCard">
+                                        <img src="/images/wwww.webp" alt="">
+                                        <div class="realtedPara">
+                                            Motu Patlu | मोटू पतलू S1 | Trekking | Episode 21 Part 1 | Download Voot
+                                        </div>
+                                    </div>
+                                    <div class="realtedVideoCard">
+                                        <img src="/images/wwww.webp" alt="">
+                                        <div class="realtedPara">
+                                            Motu Patlu | मोटू पतलू S1 | Trekking | Episode 21 Part 1 | Download Voot
+                                        </div>
+                                    </div>
+                                    <div class="realtedVideoCard">
+                                        <img src="/images/wwww.webp" alt="">
+                                        <div class="realtedPara">
+                                            Motu Patlu | मोटू पतलू S1 | Trekking | Episode 21 Part 1 | Download Voot
+                                        </div>
+                                    </div>
+                                    <div class="realtedVideoCard">
+                                        <img src="/images/wwww.webp" alt="">
+                                        <div class="realtedPara">
+                                            Motu Patlu | मोटू पतलू S1 | Trekking | Episode 21 Part 1 | Download Voot
+                                        </div>
+                                    </div>
+                                    <div class="realtedVideoCard">
+                                        <img src="/images/wwww.webp" alt="">
+                                        <div class="realtedPara">
+                                            Motu Patlu | मोटू पतलू S1 | Trekking | Episode 21 Part 1 | Download Voot
+                                        </div>
+                                    </div>
+                                    <div class="realtedVideoCard">
+                                        <img src="/images/wwww.webp" alt="">
+                                        <div class="realtedPara">
+                                            Motu Patlu | मोटू पतलू S1 | Trekking | Episode 21 Part 1 | Download Voot
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="howTo">
+        <div class="container">
+            <div class="howToTop">
+                <h2>How to convert YouTube videos by URL Link</h2>
+            </div>
+            <div class="howToCards">
+                <div class="howToCard">
+                    <div class="howToCardLeft">
+                        <div class="howToCardLeftBox">
+                            <h2>1</h2>
+                        </div>
+                        <div class="howToCardLeftContent">
+                            <p>Paste Youtube video URL into the search box, then click "START" button</p>
+                        </div>
+                    </div>
+                    <div class="howToCardRight">
+                        <img src="/images/wd.webp" alt="">
+                    </div>
+                </div>
+                <div class="howToCard">
+                    <div class="howToCardLeft">
+                        <div class="howToCardLeftBox2">
+                            <h2>2</h2>
+                        </div>
+                        <div class="howToCardLeftContent">
+                            <p>Select the format (MP3, MP4) and the quality for the conversion (Default option should be
+                                used), then click "CONVERT" button</p>
+                        </div>
+                    </div>
+                    <div class="howToCardRight">
+                        <img src="/images/step2.png" alt="">
+                    </div>
+                </div>
+                <div class="howToCard">
+                    <div class="howToCardLeft">
+                        <div class="howToCardLeftBox3">
+                            <h2>3</h2>
+                        </div>
+                        <div class="howToCardLeftContent">
+                            <p>Wait until the conversion is completed, and then click on "DOWNLOAD" button.</p>
+                        </div>
+                    </div>
+                    <div class="howToCardRight">
+                        <img src="/images/download.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+
+        <div class="container">
+            <div class="aboutQuestion">
+
+            </div>
+            <h2 class="questionHeading">
+                Quetion and Answer
+            </h2>
+            <div class="acc-container">
+                <div class="acc">
+                    <div class="acc-head">
+                        <p>How to convert Youtube videos on Android or iPhone?</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Step 1: Open Youtube App then find the Youtube video you want to convert</p>
+                        <p>Step 2: Click "Share" button and then click "Copy"</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+                        <p>Step 4: Choose the format (MP4, MP3) and the quality, then click "CONVERT" button</p>
+                        <p>Step 5: When the conversion is completed, click "DOWNLOAD" button to save the file</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="acc-head">
+                        <p>How to convert Youtube videos on Android or iPhone?</p>
+
+                    </div>
+                    <div class="acc-content">
+                        <p>Step 1: Open Youtube App then find the Youtube video you want to convert</p>
+                        <p>Step 2: Click "Share" button and then click "Copy"</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+                        <p>Step 4: Choose the format (MP4, MP3) and the quality, then click "CONVERT" button</p>
+                        <p>Step 5: When the conversion is completed, click "DOWNLOAD" button to save the file</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="acc-head">
+                        <p>How to convert Youtube videos on Android or iPhone?</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Step 1: Open Youtube App then find the Youtube video you want to convert</p>
+                        <p>Step 2: Click "Share" button and then click "Copy"</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+                        <p>Step 4: Choose the format (MP4, MP3) and the quality, then click "CONVERT" button</p>
+                        <p>Step 5: When the conversion is completed, click "DOWNLOAD" button to save the file</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+                    </div>
+                </div>
+
+                <div class="acc">
+                    <div class="acc-head">
+                        <p>How to convert Youtube videos on Android or iPhone?</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Step 1: Open Youtube App then find the Youtube video you want to convert</p>
+                        <p>Step 2: Click "Share" button and then click "Copy"</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+                        <p>Step 4: Choose the format (MP4, MP3) and the quality, then click "CONVERT" button</p>
+                        <p>Step 5: When the conversion is completed, click "DOWNLOAD" button to save the file</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+
+                    </div>
+                </div>
+                <div class="acc">
+                    <div class="acc-head">
+                        <p>How to convert Youtube videos on Android or iPhone?</p>
+                    </div>
+                    <div class="acc-content">
+                        <p>Step 1: Open Youtube App then find the Youtube video you want to convert</p>
+                        <p>Step 2: Click "Share" button and then click "Copy"</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+                        <p>Step 4: Choose the format (MP4, MP3) and the quality, then click "CONVERT" button</p>
+                        <p>Step 5: When the conversion is completed, click "DOWNLOAD" button to save the file</p>
+                        <p>Step 3: Access https://tomp3.cc from your browser. Paste the Youtube URL into the search box
+                            and then click "START"</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footerContainer">
+                <ul class="listFooter">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="/term.html">Term and Service</a></li>
+                    <li><a href="/privecy.html">Privecy & Policy</a></li>
+                    <li><a href="/contect.html">Contect Us</a></li>
+                </ul>
+                <div class="lastFooter">
+                    <p>© 2023 Downloder.Wiki</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

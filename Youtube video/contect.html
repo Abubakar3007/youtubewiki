@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="endhidenavbar hide">
+                <div class="endhide">
+                    <div class="logo2">
+                        <div class="logoIcon">
+                            <a href="/index.html"><img src="/images/h4.png" alt=""></a>
+                        </div>
+                        <div class="logoCross">
+                            <i class="fa fa-solid fa-xmark"></i>
+                        </div>
+                       
+                    </div>
+                    <ul>
+                        <li><a href="">Youtube to Link MP3</a></li>
+                        <li><a href="">YouTube to Link Video</a></li>
+                        <li><a href="">Choose a Downloder</a></li>
+                    </ul>
+                </div>
+              
+            </div>
+            <div class="containerList">
+                <div class="humberger">
+                    <i class="fa fa-solid fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="/index.html"><img src="/images/h4.png" alt=""></a>
+                </div>
+                <div class="center">
+
+                </div>
+                <div class="end">
+                    <ul>
+                        <li><a href="">Youtube to Link MP3</a></li>
+                        <li><a href="">YouTube to Link Video</a></li>
+                        <li><a href="choose.html">Choose a Downloder</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="contect">
+        <div class="container">
+            <div class="conatectUStOP">
+                <div class="contectustopCards">
+                    <div class="contectUScARD">
+                        <div class="iconCard">
+                            <i class="fa fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="address">
+                            <p><span>Address:</span>198 West 21th Street, Suite 721 New York NY 10016 </p>
+                        </div>
+                    </div>
+                    <div class="contectUScARD">
+                        <div class="iconCard">
+                            <i class="fa fa-solid fa-earth-americas"></i>
+                        </div>
+                        <div class="address">
+                            <p><span>Address:</span>198 West 21th Street, Suite 721 New York NY 10016 </p>
+                        </div>
+                    </div>
+                    <div class="contectUScARD">
+                        <div class="iconCard">
+                            <i class="fa fa-brands fa-telegram"></i>
+                        </div>
+                        <div class="address">
+                            <p><span>Address:</span>198 West 21th Street, Suite 721 New York NY 10016 </p>
+                        </div>
+                    </div>
+                    <div class="contectUScARD">
+                        <div class="iconCard">
+                            <i class="fa fa-solid fa-phone"></i>
+                        </div>
+                        <div class="address">
+                            <p><span>Phone:</span>198 West 21th Street, Suite 721 New York NY 10016 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contectForm">
+
+                <div class="innerform">
+                    <div class="innerForm2">
+                        <form action="" class="contectInnerForm">
+                            <h2>Contact Us</h2>
+                            <div class="contecttwo">
+                                <div class="singleTwo">
+                                    <label for="">Full Name</label>
+                                    <input type="text" placeholder="Name..">
+                                </div>
+                                <div class="singleTwo">
+                                    <label for="">Email Address</label>
+                                    <input type="text" placeholder="Email...">
+                                </div>
+    
+                            </div>
+                            <div class="formSubject">
+                                <label for="">Subject</label>
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <div class="formMeagges">
+                                <label for="">Message</label>
+                                <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="btn">
+                                <button>Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contectLogo">
+<img src="/images/wwww.webp" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footerContainer">
+                <ul class="listFooter">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="/term.html">Term and Service</a></li>
+                    <li><a href="/privecy.html">Privecy & Policy</a></li>
+                    <li><a href="/contect.html">Contect Us</a></li>
+                </ul>
+                <div class="lastFooter">
+                    <p>© 2023 Downloder.Wiki</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    let endHide=document.querySelector('.endhidenavbar')
+let cross=document.querySelector(".logoCross");
+let hubberger=document.querySelector(".humberger");
+hubberger.addEventListener("click",function(e){
+    e.preventDefault();
+    endHide.classList.add("show");
+    endHide.classList.remove("hide");
+    endHide.classList.add("left")
+})
+cross.addEventListener("click",function(e){
+    e.preventDefault();
+endHide.classList.add("hide");
+
+})
+</script>
+</body>
+
+</html>
